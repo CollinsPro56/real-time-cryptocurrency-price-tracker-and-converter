@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Tracker</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>₿ Crypto Price Tracker</h1>
+        <p>Real-Time Cryptocurrency Price and Market Data</p>
+      </div>
+
+      <div class="controls">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search Cryptocurrency..."
+            id="searchInput"
+          />
+          <svg
+            class="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="currentColor"
+          >
+            <path
+              d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+            />
+          </svg>
+        </div>
+        <button
+          type="button"
+          class="refresh-btn"
+          id="refreshBtn"
+          title="refresh-btn"
+        >
+          <svg
+            class="refresh-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            fill="currentColor"
+          >
+            <path
+              d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"
+            />
+          </svg>
+          Refresh
+        </button>
+      </div>
+      <div class="last-updated" id="lastUpdated"></div>
+      <div class="loading-grid" id="loadingGrid">
+        <div class="loading-spinner"></div>
+        <p>Loading cryptocurrency data...</p>
+      </div>
+      <div class="error" id="error">
+        <h3>Failed to Load Data</h3>
+        <p>
+          Unable to fetch cryptocurrency data. Please check your internet
+          connection
+        </p>
+      </div>
+      <div class="crypto-grid" id="cryptoGrid"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
