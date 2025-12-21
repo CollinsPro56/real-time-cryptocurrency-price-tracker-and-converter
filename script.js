@@ -248,3 +248,53 @@ searchInput.addEventListener("input", (e) => {
 
 setInterval(fetchCryptoData, 60000);
 fetchCryptoData();
+
+// ||  Converter Section
+
+function showCurrencyName() {
+  var selectCurrency = document.getElementById("toCurrency");
+  var currencyName = selectCurrency.options[selectCurrency.selectedIndex].text;
+  document.getElementById("currencyName").innerHTML = currencyName;
+}
+
+function showFromCurrencyName() {
+  var selectFromCurrency = document.getElementById("fromCurrency");
+  var fromCurrencyName =
+    selectFromCurrency.options[selectFromCurrency.selectedIndex].text;
+  document.getElementById("fromCurrencyName").innerHTML = fromCurrencyName;
+}
+
+const amountInput = document.querySelector("#amount");
+const fromCurrencySelect = document.querySelector("#fromCurrency");
+const toCurrencySelect = document.querySelector("#toCurrency");
+const convertButton = document.querySelector("#convert");
+const resultParagraph = document.querySelector("#result");
+
+convertButton.addEventListener("click", () => {
+  const amount = Number(amountInput.value);
+  const fromCurrency = fromCurrencySelect.value;
+  const toCurrency = toCurrencySelect.value;
+  const apiKey =
+    "b70ce2e15abfbd7c24857c35c44d04b73ab841f071a52f7cdf1c1729817a9535";
+  const apiUrl = `https://min-api.cryptocompare.com/data/price?fsym=${toCurrency}&tsyms=${fromCurrency}&api_key=${apiKey}`;
+
+  fetch(apiUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      const rate = data[fromCurrency];
+
+      if (!rate) {
+        throw new Error("Invalid exchange rate");
+      }
+
+      const result = amount * rate;
+
+      resultParagraph.innerHTML = `${amount} ${fromCurrency} is equal to ${result.toFixed(
+        8
+      )} ${toCurrency}`;
+    })
+    .catch((error) => {
+      resultParagraph.innerHTML = "Error: Unable to fetch exchange rate.";
+      console.error(error);
+    });
+});
