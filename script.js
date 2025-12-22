@@ -353,9 +353,9 @@ convertButton.addEventListener("click", () => {
 
       const result = amount * rate;
 
-      resultParagraph.innerHTML = `${amount} ${fromCurrency} is equal to ${result.toFixed(
-        8
-      )} ${toCurrency}`;
+      resultParagraph.innerHTML = `${amount} ${toCurrency} is equal to ${result.toFixed(
+        6
+      )} ${fromCurrency}`;
     })
     .catch((error) => {
       resultParagraph.innerHTML = "Error: Unable to fetch exchange rate.";

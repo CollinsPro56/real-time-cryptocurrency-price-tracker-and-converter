@@ -26,7 +26,7 @@ body {
   text-align: center;
 }
 .header .topper {
-  min-height: 140px;
+  min-height: 180px;
 }
 .header .h1 {
   top: 0.2px;
@@ -343,7 +343,7 @@ footer {
   min-width: 100dvw;
   bottom: 0.1px;
   min-height: 40px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   background: #16213e;
 }
@@ -371,7 +371,7 @@ footer {
   margin-block: 20px;
   padding: auto;
   overflow: hidden;
-  height: 650px;
+  height: 500px;
   display: block;
   border-radius: 8px;
   background: #fff;
@@ -404,7 +404,7 @@ input[type="text"]:focus {
 #fromCurrencyName {
   visibility: hidden;
   margin-top: 0;
-  font-size: 16px;
+  font-size: 1px;
   color: #667c99;
   font-weight: 600;
   display: inline-block;
@@ -414,7 +414,7 @@ input[type="text"]:focus {
 #currencyName {
   visibility: hidden;
   margin-top: 0;
-  font-size: 16px;
+  font-size: 1px;
   text-indent: 100px;
   color: #667c99;
   font-weight: 600;
@@ -486,7 +486,6 @@ select:focus {
 @media only screen and (max-width: 780px) {
   .container-of-converter {
     width: 340px;
-    height: 430px;
   }
 
   .img-placed img {
@@ -510,6 +509,7 @@ select:focus {
   #fromCurrencyName,
   #currencyName {
     visibility: visible;
+    font-size: 12px;
   }
 
   .header .h1 {
