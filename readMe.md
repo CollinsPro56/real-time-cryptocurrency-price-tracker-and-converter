@@ -29,9 +29,9 @@ The system provide the following core functionalities:
 
 ### Screenshot
 
-<img src="images/Screenshot (1).png" style="max-width: 600px; height: auto;" alt="Web Preview">
-<img src="images/Screenshot (2).png" style="max-width: 600px; height: auto;" alt="Web Preview">
-<img src="images/Screenshot (3).png" style="max-width: 600px; height: auto;" alt="Web Preview">
+<img src="Images/Screenshot (1).png" style="max-width: 600px; height: auto;" alt="Web Preview">
+<img src="Images/Screenshot (2).png" style="max-width: 600px; height: auto;" alt="Web Preview">
+<img src="Images/Screenshot (3).png" style="max-width: 600px; height: auto;" alt="Web Preview">
 <!-- markdownlint-enable MD033 -->
 
 some Screenshot here.
@@ -39,7 +39,7 @@ some Screenshot here.
 ### Links
 
 - Solution URL: [github.com](https://github.com/CollinsPro56/real-time-cryptocurrency-price-tracker-and-converter.git)
-- Live Site URL: [vercel.app](https://qr-code-component-dun-sigma.vercel.app/)
+- Live Site URL: [vercel.app](https://collinspro56.github.io/real-time-cryptocurrency-price-tracker-and-converter/)
 
 ### Built with
 
