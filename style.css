@@ -22,13 +22,23 @@ body {
 }
 
 .header {
-  text-align: center;
   margin-bottom: 40px;
+  text-align: center;
 }
-
-.header h1 {
+.header .topper {
+  min-height: 140px;
+}
+.header .h1 {
+  top: 0.2px;
+  width: 100dvw;
+  position: fixed;
+  z-index: 1;
+  background: #16213e;
+}
+.header .h1 h1 {
   font-size: 3rem;
   font-weight: 700;
+
   margin-bottom: 8px;
   background: linear-gradient(45deg, #f7931e, #ffeb3b, #4caf50, #2196f3);
   background-clip: text;
@@ -47,7 +57,7 @@ body {
   }
 }
 
-header p {
+.header p {
   font-size: 1.2rem;
   opacity: 0.8;
   font-weight: 300;
@@ -325,6 +335,19 @@ header p {
   margin-block: 9px;
 }
 
+footer {
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  bottom: 1px;
+  min-width: 100dvw;
+  bottom: 0.1px;
+  min-height: 40px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background: #16213e;
+}
+
 /* ||  Converter styling */
 
 .converter-label {
@@ -392,7 +415,7 @@ input[type="text"]:focus {
   visibility: hidden;
   margin-top: 0;
   font-size: 16px;
-  text-indent: 60px;
+  text-indent: 100px;
   color: #667c99;
   font-weight: 600;
   display: inline-block;
@@ -487,6 +510,16 @@ select:focus {
   #fromCurrencyName,
   #currencyName {
     visibility: visible;
+  }
+
+  .header .h1 {
+    width: 70dvw;
+  }
+}
+
+@media (780px <= width <= 1300px) {
+  .header .h1 {
+    width: 100dvw;
   }
 }
 /*  */

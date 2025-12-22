@@ -29,14 +29,16 @@ The system provide the following core functionalities:
 
 ### Screenshot
 
-<img src="my-screenshots/Screenshot 2025-10-26 023427.png" style="max-width: 600px; height: auto;" alt="Web Preview">
+<img src="images/Screenshot (1).png" style="max-width: 600px; height: auto;" alt="Web Preview">
+<img src="images/Screenshot (2).png" style="max-width: 600px; height: auto;" alt="Web Preview">
+<img src="images/Screenshot (3).png" style="max-width: 600px; height: auto;" alt="Web Preview">
 <!-- markdownlint-enable MD033 -->
 
-A screenshot of my solution.
+some Screenshot here.
 
 ### Links
 
-- Solution URL: [github.com](https://github.com/CollinsPro56/QR-code-component.git)
+- Solution URL: [github.com](https://github.com/CollinsPro56/real-time-cryptocurrency-price-tracker-and-converter.git)
 - Live Site URL: [vercel.app](https://qr-code-component-dun-sigma.vercel.app/)
 
 ### Built with
@@ -45,6 +47,8 @@ A screenshot of my solution.
 - CSS3
 - JavaScript
 - Mobile-first workflow
+- CoinGecko API
+- Crypto Compare API
 
 ## Author
 

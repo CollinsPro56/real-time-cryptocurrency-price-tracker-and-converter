@@ -39,8 +39,6 @@ const topCryptos = [
   "fantom",
   "hedera-hashgraph",
   "the-sandbox",
-  "decentraland",
-  "axie-infinity",
   "theta-token",
   "zcash",
   "pepecoin",
@@ -50,6 +48,66 @@ const topCryptos = [
   "loopring",
   "enjincoin",
   "basic-attention-token",
+  "sui",
+  "bitget-token",
+  "kucoin-token",
+  "bittorrent",
+  "pancakeswap-token",
+  "maker",
+  "neo",
+  "klaytn",
+  "convex-finance",
+  "ecash",
+  "chiliz",
+  "gatechain-token",
+  "ethereum-classic",
+  "flow",
+  "mina",
+  "elrond-erd",
+  "apecoin",
+  "near",
+  "internet-computer",
+  "quant",
+  "eos",
+  "axie-infinity",
+  "decentraland",
+  "gala",
+  "arweave",
+  "hedera-hashgraph",
+  "pepecoin",
+  "loopring",
+  "basic-attention-token",
+  "ken",
+  "arbitrum",
+  "optimism",
+  "base",
+  "mantle",
+  "polygon",
+  "toncoin",
+  "dogwifhat",
+  "floki",
+  "bonk",
+  "book-of-meme",
+  "render-token",
+  "fetch-ai",
+  "injective-protocol",
+  "the-graph",
+  "maker",
+  "neo",
+  "klaytn",
+  "convex-finance",
+  "ecash",
+  "chiliz",
+  "kucoin-token",
+  "gatechain-token",
+  "ethereum-classic",
+  "flow",
+  "mina",
+  "elrond-erd",
+  "apecoin",
+  "near",
+  "internet-computer",
+  "quant",
 ];
 
 async function fetchCryptoData() {
@@ -274,9 +332,15 @@ convertButton.addEventListener("click", () => {
   const amount = Number(amountInput.value);
   const fromCurrency = fromCurrencySelect.value;
   const toCurrency = toCurrencySelect.value;
-  const apiKey =
-    "b70ce2e15abfbd7c24857c35c44d04b73ab841f071a52f7cdf1c1729817a9535";
-  const apiUrl = `https://min-api.cryptocompare.com/data/price?fsym=${toCurrency}&tsyms=${fromCurrency}&api_key=${apiKey}`;
+
+  // Improvement: Use a config object or environment variables
+  const CONFIG = {
+    CRYPTO_COMPARE_KEY:
+      "b70ce2e15abfbd7c24857c35c44d04b73ab841f071a52f7cdf1c1729817a9535",
+    BASE_URL: "https://min-api.cryptocompare.com/data",
+  };
+
+  const apiUrl = `${CONFIG.BASE_URL}/price?fsym=${toCurrency}&tsyms=${fromCurrency}&api_key=${CONFIG.CRYPTO_COMPARE_KEY}`;
 
   fetch(apiUrl)
     .then((response) => response.json())

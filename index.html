@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" A Crypto Price Tracker And Converter Web Application"
+    />
+    <meta name="author" content="Collins Progress Chibuike" />
     <title>Crypto Tracker</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <h1>₿ Crypto Price Tracker And Converter</h1>
+        <div class="topper"></div>
+        <div class="h1"><h1>₿ Crypto Price Tracker And Converter</h1></div>
         <p>
           Real-Time Cryptocurrency Price and Market Data and Currency Converter
         </p>
@@ -138,6 +144,9 @@
               <option value="LTC">Litecoin (LTC)</option>
               <option value="TRX">Tron (TRX)</option>
               <option value="AVAX">Avalanche (AVAX)</option>
+              <option value="UNI">Uniswap (UNI)</option>
+              <option value="FTT">FTX Token (FTT)</option>
+              <option value="NEAR">NEAR Protocol (NEAR)</option>
             </select>
           </div>
 
@@ -150,8 +159,12 @@
 
         <p id="result"></p>
       </div>
+      <!-- Crypto Grid Section -->
       <div class="crypto-grid" id="cryptoGrid"></div>
     </div>
+    <footer>
+      <div>&copy; 2025 Collins Progress Chibuike. All Right Reserved.</div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
