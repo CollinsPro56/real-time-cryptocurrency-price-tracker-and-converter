@@ -29,9 +29,9 @@ The system provide the following core functionalities:
 
 ### Screenshot
 
-<img src="images/Screenshot (1).png" style="max-width: 600px; height: auto;" alt="Web Preview">
-<img src="images/Screenshot (2).png" style="max-width: 600px; height: auto;" alt="Web Preview">
-<img src="images/Screenshot (3).png" style="max-width: 600px; height: auto;" alt="Web Preview">
+<img src="Images/Screenshot (1).png" style="max-width: 600px; height: auto;" alt="Web Preview">
+<img src="Images/Screenshot (2).png" style="max-width: 600px; height: auto;" alt="Web Preview">
+<img src="Images/Screenshot (3).png" style="max-width: 600px; height: auto;" alt="Web Preview">
 <!-- markdownlint-enable MD033 -->
 
 some Screenshot here.
