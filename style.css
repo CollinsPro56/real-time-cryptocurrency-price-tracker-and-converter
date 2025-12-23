@@ -12,7 +12,7 @@ body {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   min-height: 100vh;
   color: white;
-  padding-inline: 5px;
+  padding-inline: 10px;
 }
 
 .container {
@@ -367,7 +367,7 @@ footer {
   margin-block: 20px;
   padding: auto;
   overflow: hidden;
-  height: 480px;
+  height: 475px;
   display: block;
   border-radius: 8px;
   background: #fff;
