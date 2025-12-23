@@ -12,6 +12,7 @@ body {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   min-height: 100vh;
   color: white;
+  padding-inline: 5px;
 }
 
 .container {
@@ -366,7 +367,7 @@ footer {
   margin-block: 20px;
   padding: auto;
   overflow: hidden;
-  height: 650px;
+  height: 480px;
   display: block;
   border-radius: 8px;
   background: #fff;
@@ -505,6 +506,10 @@ select:focus {
   #currencyName {
     visibility: visible;
     font-size: 12px;
+  }
+
+  .container-of-converter {
+    min-height: 600px;
   }
 }
 
