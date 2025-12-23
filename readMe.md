@@ -39,7 +39,7 @@ some Screenshot here.
 ### Links
 
 - Solution URL: [github.com](https://github.com/CollinsPro56/real-time-cryptocurrency-price-tracker-and-converter.git)
-- Live Site URL: [vercel.app](https://collinspro56.github.io/real-time-cryptocurrency-price-tracker-and-converter/)
+- Live Site URL: [github page](https://collinspro56.github.io/real-time-cryptocurrency-price-tracker-and-converter/)
 
 ### Built with
 

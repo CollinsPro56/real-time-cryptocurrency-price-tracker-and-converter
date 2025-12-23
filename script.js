@@ -351,11 +351,11 @@ convertButton.addEventListener("click", () => {
         throw new Error("Invalid exchange rate");
       }
 
-      const result = amount * rate;
+      const result = amount / rate;
 
-      resultParagraph.innerHTML = `${amount} ${toCurrency} is equal to ${result.toFixed(
+      resultParagraph.innerHTML = `${amount} ${fromCurrency} is equal to ${result.toFixed(
         6
-      )} ${fromCurrency}`;
+      )} ${toCurrency}`;
     })
     .catch((error) => {
       resultParagraph.innerHTML = "Error: Unable to fetch exchange rate.";

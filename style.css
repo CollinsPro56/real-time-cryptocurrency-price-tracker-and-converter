@@ -11,7 +11,6 @@ body {
     sans-serif;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   min-height: 100vh;
-  padding: 20px;
   color: white;
 }
 
@@ -25,20 +24,10 @@ body {
   margin-bottom: 40px;
   text-align: center;
 }
-.header .topper {
-  min-height: 180px;
-}
-.header .h1 {
-  top: 0.2px;
-  width: 100dvw;
-  position: fixed;
-  z-index: 1;
-  background: #1a1a2e;
-}
-.header .h1 h1 {
-  font-size: 3rem;
-  font-weight: 700;
 
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 8px;
   background: linear-gradient(45deg, #f7931e, #ffeb3b, #4caf50, #2196f3);
   background-clip: text;
@@ -357,8 +346,8 @@ footer {
 /* ||  Converter styling */
 
 .converter-label {
-  font-size: 2rem;
-  font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 8px;
   text-align: center;
   background: linear-gradient(45deg, #f7931e, #ffeb3b, #4caf50, #2196f3);
@@ -377,7 +366,7 @@ footer {
   margin-block: 20px;
   padding: auto;
   overflow: hidden;
-  height: 500px;
+  height: 650px;
   display: block;
   border-radius: 8px;
   background: #fff;
@@ -517,17 +506,8 @@ select:focus {
     visibility: visible;
     font-size: 12px;
   }
-
-  .header .h1 {
-    width: 70dvw;
-  }
 }
 
-@media (780px <= width <= 1300px) {
-  .header .h1 {
-    width: 100dvw;
-  }
-}
 /*  */
 
 @media (max-width: 768px) {
